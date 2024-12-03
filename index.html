@@ -1,20 +1,1251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Майстер масажу</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="short-info-container">
+          <p class="short-info">
+            Практичний онлайн-курс з персональною стратегією розвитку кар'єри
+          </p>
+          <p class="short-info">
+            Старт <span id="dateElement"></span>.<span id="monthElement"></span>
+          </p>
+        </div>
+        <h1 class="title">Майстер масажу</h1>
+        <p class="subtitle">нова професія за 2 місяці</p>
+        <p class="desc">
+          Як освоїти професію масажиста і заробляти
+          <span>від $1000 на місяць,</span>
+          працюючи на себе без вкладень у дороге обладнання
+        </p>
+        <ul class="list">
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/check-1x.png 1x,
+                  ./src/img/header/check-2x.png 2x
+                "
+                width="20"
+                height="20" />
+              <img
+                class="check-image"
+                src="./src/img/header/check-1x.png"
+                alt="check"
+                width="20"
+                height="20"
+            /></picture>
+            Навіть без досвіду чи медичної освіти
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/check-1x.png 1x,
+                  ./src/img/header/check-2x.png 2x
+                "
+                width="20"
+                height="20" />
+              <img
+                class="check-image"
+                src="./src/img/header/check-1x.png"
+                alt="check"
+                width="20"
+                height="20"
+            /></picture>
+            Перші клієнти одразу після навчання
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/check-1x.png 1x,
+                  ./src/img/header/check-2x.png 2x
+                "
+                width="20"
+                height="20" />
+              <img
+                class="check-image"
+                src="./src/img/header/check-1x.png"
+                alt="check"
+                width="20"
+                height="20"
+            /></picture>
+            Доступ до уроків 24/7 на зручній платформі
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/check-1x.png 1x,
+                  ./src/img/header/check-2x.png 2x
+                "
+                width="20"
+                height="20" />
+              <img
+                class="check-image"
+                src="./src/img/header/check-1x.png"
+                alt="check"
+                width="20"
+                height="20"
+            /></picture>
+            Сертифікат, який визнають клієнти та роботодавці
+          </li>
+        </ul>
+        <a class="btn-link-container" href="">
+          <p class="btn-link">Детальніше</p>
+          <div class="btn-star-container">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/star-1x.png 1x,
+                  ./src/img/header/star-2x.png 2x
+                "
+                width="70"
+                height="70" />
+              <img
+                class="btn-star-image"
+                src="./src/img/header/star-1x.png"
+                alt="star-sale"
+                width="70"
+                height="70"
+            /></picture>
+            <p class="btn-sale-text">
+              знижка <br />
+              <span>-87%</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="bonuses">
+        <div class="container">
+          <h2 class="title">
+            Приєднайтесь до кінця доби за кращою ціною та
+            <span>отримайте бонуси</span>
+          </h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="250"
+                  height="172" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="250"
+                  height="172"
+              /></picture>
+              <p class="bonus-text">
+                <span>Персональний розбір</span> з покроковим планом розвитку
+                кар’єри
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="250"
+                  height="172" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus"
+                  width="250"
+                  height="172"
+              /></picture>
+              <p class="bonus-text">
+                <span>Чек-лист</span> обладнання для роботи
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-03-1x.png 1x,
+                    ./src/img/bonuses/bonus-03-2x.png 2x
+                  "
+                  width="250"
+                  height="172" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-03-1x.png"
+                  alt="bonus"
+                  width="250"
+                  height="172"
+              /></picture>
+              <p class="bonus-text">
+                <span>2 додаткових уроки</span> з маркетингу масажних послуг
+              </p>
+            </li>
+          </ul>
+          <span class="plus">+</span>
+          <div class="wrapper">
+            <p class="text">Запрошення до закритого чату з експертом</p>
+          </div>
+          <div class="timer-container">
+            <p class="timer-text">до закінчення акції</p>
+            <div id="countdown-one" class="countdown">
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+                <div class="countdown-label hours-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+                <div class="countdown-label minutes-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+                <div class="countdown-label seconds-label"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-you">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Цей курс створено</h2>
+            <p class="subtitle">для тебе, якщо:</p>
+          </div>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/your-01-1x.png 1x,
+                    ./src/img/for-you/your-01-2x.png 2x
+                  "
+                  width="110"
+                  height="100" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/for-you/your-01-1x.png"
+                  alt="for you image"
+                  width="110"
+                  height="100"
+              /></picture>
+              <div class="text-container">
+                <p class="text">
+                  Мрієш стати масажистом, але не знаєш, з чого почати
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/your-02-1x.png 1x,
+                    ./src/img/for-you/your-02-2x.png 2x
+                  "
+                  width="110"
+                  height="100" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/for-you/your-02-1x.png"
+                  alt="for you image"
+                  width="110"
+                  height="100"
+              /></picture>
+              <div class="text-container">
+                <p class="text">
+                  Шукаєш нову професію, яка приносить задоволення та стабільний
+                  дохід
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/your-03-1x.png 1x,
+                    ./src/img/for-you/your-03-2x.png 2x
+                  "
+                  width="110"
+                  height="100" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/for-you/your-03-1x.png"
+                  alt="for you image"
+                  width="110"
+                  height="100"
+              /></picture>
+              <div class="text-container">
+                <p class="text">
+                  Хочеш вивчити техніки масажу для себе чи своїх близьких
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/your-04-1x.png 1x,
+                    ./src/img/for-you/your-04-2x.png 2x
+                  "
+                  width="110"
+                  height="100" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/for-you/your-04-1x.png"
+                  alt="for you image"
+                  width="110"
+                  height="100"
+              /></picture>
+              <div class="text-container">
+                <p class="text">
+                  Маєш досвід, але хочеш вдосконалити навички та отримати
+                  сертифікат
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/your-05-1x.png 1x,
+                    ./src/img/for-you/your-05-2x.png 2x
+                  "
+                  width="110"
+                  height="100" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/for-you/your-05-1x.png"
+                  alt="for you image"
+                  width="110"
+                  height="100"
+              /></picture>
+              <div class="text-container">
+                <p class="text">Не вистачає впевненості для старту</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/your-06-1x.png 1x,
+                    ./src/img/for-you/your-06-2x.png 2x
+                  "
+                  width="110"
+                  height="100" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/for-you/your-06-1x.png"
+                  alt="for you image"
+                  width="110"
+                  height="100"
+              /></picture>
+              <div class="text-container">
+                <p class="text">Немає часу для офлайн-навчання</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/for-you/your-07-1x.png 1x,
+                    ./src/img/for-you/your-07-2x.png 2x
+                  "
+                  width="110"
+                  height="100" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/for-you/your-07-1x.png"
+                  alt="for you image"
+                  width="110"
+                  height="100"
+              /></picture>
+              <div class="text-container">
+                <p class="text">
+                  Важко знайти структуровані знання та практичні техніки
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-author">
+        <div class="container">
+          <h2 class="title">Хто викладає КУРС</h2>
+          <picture
+            ><source
+              srcset="./src/img/author-1x.png 1x, ./src/img/author-2x.png 2x"
+              width="320"
+              height="320" />
+            <img
+              class="author-image"
+              src="./src/img/author-1x.png"
+              alt="author"
+              width="320"
+              height="320"
+          /></picture>
+          <h3 class="author-name">Катерина Григор’єва</h3>
+          <ul class="list">
+            <li class="list-item">
+              Практикуючий масажист з <span>13-річним досвідом</span>
+            </li>
+            <li class="list-item">
+              <span>Спеціаліст</span> по лікувальним технікам та масажу обличчя
+            </li>
+            <li class="list-item">
+              Фізіотерапевт, хіропрактик та фітотерапевт
+            </li>
+            <li class="list-item">
+              <span>Засновниця мережі салонів</span> „Masaż Line” та курсів
+              масажу „Międzynarodowe kursy rozwoju zawodowego”
+            </li>
+            <li class="list-item">
+              <span>Понад 1000 випускників працюють</span> у масажних кабінетах
+              і салонах краси
+            </li>
+            <li class="list-item">
+              Розробила авторську методику навчання, яка дозволяє
+              <span>опанувати масаж за 30 днів</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="you-get">
+        <div class="container">
+          <h2 class="title">Що ви отримаєте:</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/you-get/get-01-1x.png 1x,
+                    ./src/img/you-get/get-01-2x.png 2x
+                  "
+                  width="119"
+                  height="109" />
+                <img
+                  class="get-image"
+                  src="./src/img/you-get/get-01-1x.png"
+                  alt="image"
+                  width="119"
+                  height="109"
+              /></picture>
+              <p class="text">
+                10 відеоуроків з детальним розбором технік масажу
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/you-get/get-02-1x.png 1x,
+                    ./src/img/you-get/get-02-2x.png 2x
+                  "
+                  width="119"
+                  height="109" />
+                <img
+                  class="get-image"
+                  src="./src/img/you-get/get-02-1x.png"
+                  alt="image"
+                  width="119"
+                  height="109"
+              /></picture>
+              <p class="text">Практичні завдання після кожного уроку</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/you-get/get-03-1x.png 1x,
+                    ./src/img/you-get/get-03-2x.png 2x
+                  "
+                  width="116"
+                  height="90" />
+                <img
+                  class="get-image"
+                  src="./src/img/you-get/get-03-1x.png"
+                  alt="image"
+                  width="116"
+                  height="90"
+              /></picture>
+              <p class="text">
+                Матеріали: покрокові PDF-інструкції, схеми та чек-листи
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/you-get/get-04-1x.png 1x,
+                    ./src/img/you-get/get-04-2x.png 2x
+                  "
+                  width="109"
+                  height="100" />
+                <img
+                  class="get-image"
+                  src="./src/img/you-get/get-04-1x.png"
+                  alt="image"
+                  width="109"
+                  height="100"
+              /></picture>
+              <p class="text">
+                Бонус: рекомендації щодо вибору обладнання та старту роботи
+                вдома
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/you-get/get-05-1x.png 1x,
+                    ./src/img/you-get/get-05-2x.png 2x
+                  "
+                  width="96"
+                  height="69" />
+                <img
+                  class="get-image"
+                  src="./src/img/you-get/get-05-1x.png"
+                  alt="image"
+                  width="96"
+                  height="69"
+              /></picture>
+              <p class="text">
+                Сертифікат: визнається клієнтами та роботодавцями
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <h2 class="title">Програма курсу</h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-01-1x.png 1x,
+                    ./src/img/program/program-01-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-01-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">01</p>
+              <p class="item-text">
+                <span>Основи анатомії</span> та фізіології опорно-рухового
+                апарату
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-02-1x.png 1x,
+                    ./src/img/program/program-02-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-02-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">02</p>
+              <p class="item-text">
+                <span>Рухи класичного масажу:</span> погладжування та розтирання
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-03-1x.png 1x,
+                    ./src/img/program/program-03-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-03-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">03</p>
+              <p class="item-text">
+                <span>Рухи класичного масажу:</span> розминання, вібрації
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-04-1x.png 1x,
+                    ./src/img/program/program-04-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-04-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">04</p>
+              <p class="item-text"><span>Масаж</span> спини</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-05-1x.png 1x,
+                    ./src/img/program/program-05-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-05-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">05</p>
+              <p class="item-text"><span>Масаж</span> нижніх кінцівок</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-06-1x.png 1x,
+                    ./src/img/program/program-06-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-06-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">06</p>
+              <p class="item-text"><span>Масаж</span> верхніх кінцівок</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-07-1x.png 1x,
+                    ./src/img/program/program-07-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-07-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">07</p>
+              <p class="item-text"><span>Масаж</span> шийно-комірцевої зони</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-08-1x.png 1x,
+                    ./src/img/program/program-08-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-08-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">08</p>
+              <p class="item-text">
+                <span>Масаж</span> живота та грудної клітки
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-09-1x.png 1x,
+                    ./src/img/program/program-09-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-09-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">09</p>
+              <p class="item-text"><span>Масаж</span> голови та обличчя</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/program-10-1x.png 1x,
+                    ./src/img/program/program-10-2x.png 2x
+                  "
+                  width="34"
+                  height="34" />
+                <img
+                  class="program-image"
+                  src="./src/img/program/program-10-1x.png"
+                  alt="image"
+                  width="34"
+                  height="34"
+              /></picture>
+              <p class="item-number">10</p>
+              <p class="item-text"><span>Загальний масаж</span> тіла</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bonuses with-price">
+        <div class="price-star-container">
+          <picture
+            ><source
+              srcset="
+                ./src/img/header/star-1x.png 1x,
+                ./src/img/header/star-2x.png 2x
+              "
+              width="100"
+              height="100" />
+            <img
+              class="price-star-image"
+              src="./src/img/header/star-1x.png"
+              alt="star-sale"
+              width="100"
+              height="100"
+          /></picture>
+          <p class="price-sale-text">
+            знижка <br />
+            <span>-87%</span>
+          </p>
+        </div>
+        <div class="container">
+          <p class="price"><span>3750грн</span> 490грн</p>
+          <h2 class="title">
+            Приєднайтесь до кінця доби за кращою ціною та
+            <span>отримайте бонуси</span>
+          </h2>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="250"
+                  height="172" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus"
+                  width="250"
+                  height="172"
+              /></picture>
+              <p class="bonus-text">
+                <span>Персональний розбір</span> з покроковим планом розвитку
+                кар’єри
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="250"
+                  height="172" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus"
+                  width="250"
+                  height="172"
+              /></picture>
+              <p class="bonus-text">
+                <span>Чек-лист</span> обладнання для роботи
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-03-1x.png 1x,
+                    ./src/img/bonuses/bonus-03-2x.png 2x
+                  "
+                  width="250"
+                  height="172" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-03-1x.png"
+                  alt="bonus"
+                  width="250"
+                  height="172"
+              /></picture>
+              <p class="bonus-text">
+                <span>2 додаткових уроки</span> з маркетингу масажних послуг
+              </p>
+            </li>
+          </ul>
+          <span class="plus">+</span>
+          <div class="wrapper">
+            <p class="text">Запрошення до закритого чату з експертом</p>
+          </div>
+          <div class="timer-container">
+            <p class="timer-text">до закінчення акції</p>
+            <div id="countdown-two" class="countdown">
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+                <div class="countdown-label hours-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+                <div class="countdown-label minutes-label"></div>
+              </div>
+              <div><span class="countdown-doubledot">:</span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+                <div class="countdown-label seconds-label"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-study">
+        <div class="container">
+          <div class="wrapper">
+            <div class="title-container">
+              <h2 class="title">Як відбувається</h2>
+              <p class="subtitle">навчання</p>
+            </div>
+            <ul class="list">
+              <li class="list-item">
+                Одразу після оплати ви отримаєте доступ до матеріалів на email,
+                який вкажете при оплаті
+              </li>
+              <li class="list-item">
+                Навчання онлайн: проходьте у зручний час на будь-якому пристрої
+              </li>
+              <li class="list-item">
+                Зв'язок із викладачем: підтримка у чаті та відповіді на
+                запитання
+              </li>
+              <li class="list-item">
+                Заключне завдання: для отримання сертифіката
+              </li>
+              <li class="list-item">Доступ до матеріалів 90 днів</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Результати</h2>
+            <p class="subtitle">після навчання</p>
+          </div>
+          <p class="desc">Після проходження курсу ви зможете:</p>
+          <ul class="list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/result/result-01-1x.png 1x,
+                    ./src/img/result/result-01-2x.png 2x
+                  "
+                  width="40"
+                  height="40" />
+                <img
+                  class="result-image"
+                  src="./src/img/result/result-01-1x.png"
+                  alt="emoji"
+                  width="40"
+                  height="40"
+              /></picture>
+              Виконувати різні види масажу професійно
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/result/result-02-1x.png 1x,
+                    ./src/img/result/result-02-2x.png 2x
+                  "
+                  width="40"
+                  height="40" />
+                <img
+                  class="result-image"
+                  src="./src/img/result/result-02-1x.png"
+                  alt="emoji"
+                  width="40"
+                  height="40"
+              /></picture>
+              Розпочати власну практику або знайти роботу в салоні
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/result/result-03-1x.png 1x,
+                    ./src/img/result/result-03-2x.png 2x
+                  "
+                  width="40"
+                  height="40" />
+                <img
+                  class="result-image"
+                  src="./src/img/result/result-03-1x.png"
+                  alt="emoji"
+                  width="40"
+                  height="40"
+              /></picture>
+              Отримувати стабільний дохід від 20 000 грн і більше
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/result/result-04-1x.png 1x,
+                    ./src/img/result/result-04-2x.png 2x
+                  "
+                  width="40"
+                  height="40" />
+                <img
+                  class="result-image"
+                  src="./src/img/result/result-04-1x.png"
+                  alt="emoji"
+                  width="40"
+                  height="40"
+              /></picture>
+              Допомагати людям поліпшувати їхнє здоров’я та самопочуття
+            </li>
+          </ul>
+          <a class="btn-link-container" href="">
+            <p class="btn-link">Хочу на курс</p>
+            <div class="btn-star-container">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/star-1x.png 1x,
+                    ./src/img/header/star-2x.png 2x
+                  "
+                  width="70"
+                  height="70" />
+                <img
+                  class="btn-star-image"
+                  src="./src/img/header/star-1x.png"
+                  alt="star-sale"
+                  width="70"
+                  height="70"
+              /></picture>
+              <p class="btn-sale-text">
+                знижка <br />
+                <span>-87%</span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="title">відгуки</h2>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-01-1x.png 1x,
+                      ./src/img/reviews/review-01-2x.png 2x
+                    "
+                    width="320"
+                    height="460" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-01-1x.png"
+                    alt="review"
+                    width="320"
+                    height="460"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-02-1x.png 1x,
+                      ./src/img/reviews/review-02-2x.png 2x
+                    "
+                    width="320"
+                    height="460" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-02-1x.png"
+                    alt="review"
+                    width="320"
+                    height="460"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-03-1x.png 1x,
+                      ./src/img/reviews/review-03-2x.png 2x
+                    "
+                    width="320"
+                    height="460" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-03-1x.png"
+                    alt="review"
+                    width="320"
+                    height="460"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-04-1x.png 1x,
+                      ./src/img/reviews/review-04-2x.png 2x
+                    "
+                    width="320"
+                    height="460" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-04-1x.png"
+                    alt="review"
+                    width="320"
+                    height="460"
+                /></picture>
+              </div>
+              <div class="swiper-slide">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/reviews/review-05-1x.png 1x,
+                      ./src/img/reviews/review-05-2x.png 2x
+                    "
+                    width="320"
+                    height="460" />
+                  <img
+                    class="review-image"
+                    src="./src/img/reviews/review-05-1x.png"
+                    alt="review"
+                    width="320"
+                    height="460"
+                /></picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="title">Відповіді на</h2>
+            <p class="subtitle">запитання</p>
+          </div>
+          <div class="questions-container">
+            <ul class="questions-list list">
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">Чи потрібен досвід?</p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Ні, курс створено для новачків.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Чи потрібна медична освіта?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Ні, усі необхідні знання ви отримаєте під час навчання.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Що входить у вартість курсу?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Усі відеоуроки, практичні матеріали, бонуси та сертифікат.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Чи можу я отримати сертифікат?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Так, після виконання фінального завдання.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="you-want">
+        <div class="container">
+          <h2 class="title">Якщо ти хочеш:</h2>
+          <ul class="list">
+            <li class="list-item">Опанувати масаж і розпочати нову кар'єру</li>
+            <li class="list-item">
+              Мати можливість працювати на себе або знайти роботу в салоні
+            </li>
+            <li class="list-item">
+              Отримати практичні навички, які допоможуть заробляти стабільно
+            </li>
+            <li class="list-item">
+              Вчитися у професіонала з багаторічним досвідом
+            </li>
+          </ul>
+          <p class="miss-title">То цей курс саме для тебе!</p>
+          <p class="miss-text">
+            Не пропусти шанс отримати 87% знижки та стартовий пакет бонусів.
+            Реєструйся зараз!
+          </p>
+          <a class="btn-link-container" href="">
+            <p class="btn-link">ПРИЄДНАТИСЬ</p>
+            <div class="btn-star-container">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/star-1x.png 1x,
+                    ./src/img/header/star-2x.png 2x
+                  "
+                  width="70"
+                  height="70" />
+                <img
+                  class="btn-star-image"
+                  src="./src/img/header/star-1x.png"
+                  alt="star-sale"
+                  width="70"
+                  height="70"
+              /></picture>
+              <p class="btn-sale-text">
+                знижка <br />
+                <span>-87%</span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer section">
+      <div class="container">
+        <div class="fop-box">
+          <p class="name">фоп імʼя прізвище</p>
+          <p class="code">іпн 00000000</p>
+        </div>
+        <a class="mail-link" href="mailto:"
+          ><div class="mail-box">
+            <img src="./src/img/mail.svg" alt="mail" />
+            <p class="mail">пошта</p>
+          </div></a
+        >
+        <div class="deals-box">
+          <a href="" target="_blank" rel="nofollow" class="deals-link public"
+            >публічна оферта</a
+          >
+          <a
+            href=""
+            target="_blank"
+            rel="nofollow"
+            class="deals-link confidence"
+            >політика конфідеційності</a
+          >
+        </div>
+        <a
+          class="dising-creator"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><img src="./src/img/insta.svg" alt="insta" height="25" width="25" />
+          <p>
+            розробка сайту <br />
+            <span>lisa bardadym</span>
+          </p></a
+        >
+      </div>
+    </footer>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/questions.js" type="module"></script>
+    <script src="./src/js/changeDate.js" type="module"></script>
   </body>
 </html>
