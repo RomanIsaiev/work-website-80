@@ -30,13 +30,18 @@
         n.queue = [];
         t = b.createElement(e);
         t.async = !0;
-        t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+        t.src = v;
         s = b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t, s);
-      })(window, document, 'script');
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
 
-      fbq('init', '3346908035450172'); // твой Pixel ID
-      fbq('track', 'PageView'); // базовое событие
+      fbq('init', '1793096341346504'); // ваш Pixel ID
+      fbq('track', 'PageView');
     </script>
   </head>
   <body>
