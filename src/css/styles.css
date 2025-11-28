@@ -197,6 +197,10 @@ body {
   animation: pulseScale 2000ms infinite;
 }
 
+.btn-link-container.margin {
+  margin-bottom: 30px;
+}
+
 .btn-link {
   color: #090909;
   text-align: center;
